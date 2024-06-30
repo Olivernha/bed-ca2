@@ -1,0 +1,24 @@
+/* Skeleton loader styles */
+.skeleton-line {
+    background-color: #eee;
+    height: 1.2em;
+    border-radius: 2px;
+    width: 100%;
+    /* Adjust width for different elements */
+    animation: skeleton-loading 1.5s infinite ease-in-out;
+}
+
+.carousel-item .skeleton-line{
+    height: 270px;
+}
+
+/* Animation for loader */
+@keyframes skeleton-loading {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

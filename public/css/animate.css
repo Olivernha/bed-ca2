@@ -1,0 +1,60 @@
+.card.delete {
+    animation: delete 0.5s ease forwards;
+
+}
+
+
+.single-note-item.delete {
+    display: inline-block;
+    /* Ensures row structure */
+    animation: slideOutFade 0.5s ease-in-out forwards;
+}
+
+@keyframes slideOutFade {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.card.add, .single-note-item.add {
+    animation: add 0.5s ease forwards;
+}
+
+@keyframes add {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+        margin-bottom: 0;
+    }
+
+    100% {
+        opacity: 1;
+        margin-bottom: 10px;
+        /* Set the same margin as in .card */
+    }
+}
+
+@keyframes delete {
+    0% {
+        opacity: 1;
+        margin-bottom: 10px;
+        /* Set the same margin as in .card */
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(50%);
+        margin-bottom: 0;
+    }
+}

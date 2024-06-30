@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "test": "npm run init_tables && jest --forceExit",
+    "init_tables": "node src/configs/createSchema.js && node src/configs/initTables.js",
+    "test:server": "concurrently \"npm run dev\" \"npm run test -- playwright.test.js --json --outputFile='test_results.json'\" --kill-others --success first",
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.6.3",
+    "nodemon": "^3.0.1",
+    "uuid": "^9.0.1"
+  },
+  "name": "bed-ca2-olivernha",
+  "description": "This repository contains a test suite to verify the login and registration functionality of a web application using Node.js, Express, MySQL, JSON Web Token and Bcrypt.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

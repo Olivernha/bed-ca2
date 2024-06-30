@@ -1,0 +1,54 @@
+.message-bar {
+    background-color: var(--main-card-color);
+}
+
+.note-has-grid .single-note-item .side-stick {
+    position: absolute;
+    width: 3px;
+    height: 35px;
+    left: 0;
+
+}
+
+.note-has-grid .single-note-item .card {
+    border-radius: 10px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.57rem;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: var(--main-card-color);
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: 0;
+}
+
+.pink {
+    color: rgba(255, 80, 80, 0.5);
+    ;
+}
+
+.skyblue {
+    color: rgba(44, 171, 227, 0.5);
+
+}
+
+.greenpale {
+    color: rgba(44, 208, 126, 0.5);
+}
+
+.red {
+    color: #ff5050;
+}
